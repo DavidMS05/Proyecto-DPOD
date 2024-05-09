@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PlanetaEnTusManos.css">
+    <title>Encuesta</title>
+</head>
+<body>
+    <h1>El Planeta en tus Manos</h1>
+    <h2>“¿Eres amigo de la sostenibilidad?”</h2>
+    <p>¿Te gustaria saber cual es tu nivel de sostenibilidad y conocer algunas cosas que puedes hacer para mejorar tus habitos relacionados a la sostenibilidad?</p>
+    <p>Toma esta encuesta para descubrirlo</p>
+    <br>
+    <button id="iniciarCuestionario" onclick="iniciarEncuesta()">Iniciar Cuestionario</button>
+    <br>
+    <div id="preguntas" style="display: none;">
+    <label><b>1. ¿Reciclas a menudo?</b></label>
+    <br>
+        <select id="pregunta1" class="Preg" >
+            <option value="0">Selecciona una opción.</option>
+            <option value="40">Siempre.</option>
+            <option value="30">A veces.</option>
+            <option value="20">Casi nunca.</option>
+            <option value="10">Nunca.</option>
+        </select>
+        <br>
+    <br><br>
+
+    <label><b>2. Si tienes un papel con el que has limpiado comida, ¿dónde lo tirarías?</b></label>
+    <br>
+        <select id="pregunta2" class="Preg">
+            <option value="0">Selecciona una opción.</option>
+            <option value="30">Contenedor azul.</option>
+            <option value="40">Contenedor gris.</option>
+            <option value="20">Contenedor marrón.</option>
+            <option value="10">Contenedor verde.</option>
+        </select>
+        <br>
+    <br><br>
+
+    <label><b>3. ¿Mantienes la luz encendida cuando no la utilizas?</b></label>
+    <br>
+        <select id="pregunta3" class="Preg">
+            <option value="0">Selecciona una opción.</option>
+            <option value="40">Si.</option>
+            <option value="10">No.</option>
+        </select>
+        <br>
+    <br><br>
+
+    <label><b>4. ¿Cuál es el desarrollo de sostenibilidad más importante?</b></label>
+    <br>
+        <select id="pregunta4" class="Preg">
+            <option value="0">Selecciona una opción.</option>
+            <option value="20">Medioambiental.</option>
+            <option value="20">Social.</option>
+            <option value="20">Económica.</option>
+            <option value="40">Todas son importantes.</option>
+        </select>
+        <br>
+    <br><br>
+
+    <label><b>5. ¿Qué utilizarías para guardar comida?</b></label>
+    <br>
+        <select id="pregunta5" class="Preg">
+            <option value="0">Selecciona una opción.</option>
+            <option value="10">Plástico.</option>
+            <option value="30">Cartón.</option>
+            <option value="40">Envases hechos de materiales reciclados.</option>
+            <option value="20">Envases de Cristal.</option>
+        </select>
+        <br>
+    <br><br>
+
+    <label><b>6. Si tuvieras que elegir un coche, ¿cuál elegirías?</b></label>
+    <br>
+        <select id="pregunta6" class="Preg">
+            <option value="0">Selecciona una opción.</option>
+            <option value="10">Uno que use gasolina.</option>
+            <option value="20">Uno que use eléctricidad.</option>
+            <option value="40">Prefiero usar bicicleta.</option>
+            <option value="30">Uno que sea híbrido.</option>
+        </select>
+        <br>
+    <br><br>
+
+    <label><b>7. Si tienes hijos o los tuvieras, ¿les enseñarías o les vas a enseñar a reciclar?</b></label>
+    <br>
+        <select id="pregunta7" class="Preg">
+            <option value="0">Selecciona una opción.</option>
+            <option value="40">Si.</option>
+            <option value="10">No.</option>
+        </select>
+        <br>
+    <br><br>
+
+    <label><b>8. ¿Cuánto sabes sobre los problemas medioambientales actuales?</b></label>
+    <br>
+        <select id="pregunta8" class="Preg">
+            <option value="0">Selecciona una opción.</option>
+            <option value="40">Estoy bien informado y me mantengo actualizado.</option>
+            <option value="20">Estoy interesado en el tema, pero no tengo muchos conocimientos actualmente.</option>
+            <option value="30">Tengo los conocimientos básicos sobre problemas medioambientales.</option>
+            <option value="10">No estoy muy informado sobre cuestiones ambientales.</option>
+        </select>
+        <br>
+    <br><br>
+
+    <label><b>9. ¿De qué formas te desplazas?</b></label>
+    <br>
+        <select  id="pregunta9" class="Preg">
+            <option value="0">Selecciona una opción.</option>
+            <option value="40">Bicicleta o caminando.</option>
+            <option value="30">Transporte público.</option>
+            <option value="20">Transporte personal.</option>
+            <option value="10">No tengo un medio de transporte principal</option>
+        </select>
+        <br>
+    <br><br>
+
+    <label><b>10. ¿Con qué frecuencia revisas y ajustas tus prácticas sostenibles en el hogar?</b></label>
+    <br>
+        <select  id="pregunta10" class="Preg">
+            <option value="0">Selecciona una opción.</option>
+            <option value="40">Regularmente, haciendo ajustes para mejorar continuamente.</option>
+            <option value="30">A menudo, pero no de manera constante.</option>
+            <option value="20">Ocasionalmente, en temporadas.</option>
+            <option value="10">No suelo revisar ni ajustar mis prácticas sostenibles.</option>
+        </select>
+        <br>
+    <br><br>
+
+    <button id="iniciarCuestionario" onclick="calcularPuntuacion()">Enviar Respuestas</button>
+
+    <div id="resultado"></div>
+    <br>
+    <br>
+    <br>
+    <table border="1px" cellpadding="12px">
+        <tr>
+            <th>Puntuación</th>
+            <th>Consejos</th>
+        </tr>
+        <tr id="400p">
+            <td>Entre 350 y 400 puntos</td>
+            <td>¡Sigue así! Estás siendo muy buen amigo de la sostenibilidad, seguro que te aprecia mucho.</td>
+        </tr>
+        <tr id="300p">
+            <td>Entre 250 y 350 puntos</td>
+            <td>Cuando necesites transporarte, intenta usar metodos mas sostenibles como transporte público</td>
+        </tr>
+        <tr id="200p">
+            <td>Entre 150 y 250 puntos</td>
+            <td>No malgastes agua, cierra el grifo mientras no lo estes usando</td>
+        </tr>
+        <tr id="100p">
+            <td>Entre 50 y 150 puntos</td>
+            <td>Sustituye las baterias de único uso por baterias recargables que puedes cargar y volver a usar</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+
+    <script src="codigo.js"></script>        
+
+</body>
+</html>

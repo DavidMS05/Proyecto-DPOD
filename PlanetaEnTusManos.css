@@ -1,0 +1,104 @@
+
+body{
+  font-size: 16;
+  line-height: 1.5;
+  background-color:cornsilk;
+  background-image: url("sostenible.png");
+  background-repeat:no-repeat ;
+  background-position: right;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;}
+
+h1{
+    color:white ;
+    background-color: rgb(106, 145, 55);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: center;
+    word-spacing: 10px;
+    border-radius: 20px;
+}
+p{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 10px;
+}
+
+.span{
+  color: red;
+  display: none;
+}
+
+h2{
+  color:darkslategrey ;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24;
+  margin-top: 0;
+
+}
+
+table{
+  background-color: lightgreen;
+  border-radius: 10px;
+  border-color:darkseagreen;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+  background-color: darkolivegreen;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  cursor: pointer
+}
+
+table{
+  margin: auto;
+  border-radius: 5px;
+  
+}
+th{
+  background-color: rgb(101, 117, 72);
+  color: white;
+}
+
+#iniciarCuestionario {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Add rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#iniciarCuestionario:hover {
+  animation: pulsate 1.5s ease-in-out infinite alternate; /* Add pulsating animation */
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1); /* Normal size */
+  }
+  50% {
+    transform: scale(1.1); /* Slightly larger */
+  }
+  100% {
+    transform: scale(1); /* Back to normal */
+  }
+}
+
+.Preg {
+  border: 1px solid #ccc;
+  background-color: #91bd84;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+}
