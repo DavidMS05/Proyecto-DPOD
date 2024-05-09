@@ -43,6 +43,14 @@ table{
   border-radius: 10px;
   border-color:darkseagreen;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: auto;
+  width: 50%;
+  border-radius: 5px;
+  table-layout: fixed;
+}
+
+label{
+  padding-bottom: 50px;
 }
 
 button{
@@ -55,11 +63,6 @@ button{
   cursor: pointer
 }
 
-table{
-  margin: auto;
-  border-radius: 5px;
-  
-}
 th{
   background-color: rgb(101, 117, 72);
   color: white;
@@ -101,4 +104,32 @@ th{
   padding: 5px;
   border-radius: 4px;
   text-align: center;
+}
+
+#contenido-grado-cuatro, #contenido-grado-tres,
+#contenido-grado-dos, #contenido-grado-uno{
+  display: none;
+}
+
+ol{
+  text-align: left;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+ol li {
+  padding-bottom: 5px;
+}
+
+ol li::marker{
+  font-weight: bold;
+}
+
+td p{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+footer{
+  background-color: #3e8e41;
 }
