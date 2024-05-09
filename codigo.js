@@ -1,7 +1,7 @@
 function iniciarEncuesta() {
     document.getElementById("preguntas").style.display = "block";
     document.getElementById("iniciarCuestionario").style.display = "none";
-}
+} 
 
 function calcularPuntuacion() {
     var pregunta1 = parseInt(document.getElementById("pregunta1").value);
@@ -20,8 +20,9 @@ function calcularPuntuacion() {
     if(pregunta1 == 0 || pregunta2 == 0 || pregunta3 == 0 || pregunta4 == 0 || pregunta5 == 0 || pregunta6 == 0 || pregunta7 == 0 || pregunta8 == 0 || pregunta9 == 0 || pregunta10 == 0){
         alert("Por favor responde a todas las preguntas")
     } else{
-        document.getElementById("resultado").innerHTML= "<span>Tu puntuacion es "+ puntuacionTotal + "</span>";
+        document.getElementById("resultado").innerHTML= "<span id='cosa'>Tu puntuacion es "+ puntuacionTotal + "</span>";
         señalarfila(puntuacionTotal)
+        document.getElementById("preguntas1").style.display = "block";
     }
 }
 
